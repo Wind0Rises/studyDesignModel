@@ -12,9 +12,15 @@ import com.liu.study.design.model.behavior.responsibility.whole.impl.WholeSpecia
 public class WholeFilterDemo {
 
     public static void main(String[] args) {
+        /**
+         * 第一个Chain。
+         */
         WholeFilterChain chain1 = new WholeFilterChain();
         chain1.addFilter(new WholeNumberFilter()).addFilter(new WholeSpecialCharFilter());
 
+        /**
+         * 第二个Chain。
+         */
         WholeFilterChain chain2 = new WholeFilterChain();
         chain2.addFilter(new WholeNewNumberFilter());
 

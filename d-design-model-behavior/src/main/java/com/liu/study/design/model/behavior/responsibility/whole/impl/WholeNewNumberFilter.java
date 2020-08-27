@@ -20,8 +20,9 @@ public class WholeNewNumberFilter implements WholeFilter {
 
         chain.doFilter(request, response, chain);
 
+        
+
         String respMessage = response.getMessage().replace('2', '二');
         response.setMessage(respMessage);
-
     }
 }

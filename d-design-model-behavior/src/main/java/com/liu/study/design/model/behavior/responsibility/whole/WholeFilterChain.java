@@ -14,6 +14,13 @@ public class WholeFilterChain implements WholeFilter {
 
     private int index = 0;
 
+    /**
+     * 因为WholeFilter实现了Filter接口，所有filters中的filter可能是
+     * Chain。
+     *
+     * @param filter
+     * @return
+     */
     public WholeFilterChain addFilter(WholeFilter filter) {
         filters.add(filter);
         return this;
@@ -27,6 +34,10 @@ public class WholeFilterChain implements WholeFilter {
             return ;
         }
 
+        /**
+         * 如果filters.get(index)获取的是普通的Filter，直接执行普通的filter。
+         * 如果Chain，这个就可以看成递归了。
+         */
         WholeFilter filter = filters.get(index);
         index++;
 
