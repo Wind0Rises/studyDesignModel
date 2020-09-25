@@ -2,8 +2,6 @@ package com.liu.study.design.model.behavior.strategy.lamda;
 
 import com.liu.study.design.model.behavior.strategy.lamda.impl.TripModeHighTrain;
 
-import java.util.function.Function;
-
 /**
  * @author lwa
  * @version 1.0.0

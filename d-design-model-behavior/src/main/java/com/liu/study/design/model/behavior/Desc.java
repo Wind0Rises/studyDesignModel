@@ -9,11 +9,11 @@ package com.liu.study.design.model.behavior;
 public class Desc {
 
     /**
-     * 策略（Strategy）模式：
-     * 模板方法（Template Method）模式：
-     * 观察者（Observer）模式：
+     * 策略（Strategy）模式：  {@link java.util.Comparator}、【【是不是和工厂模式很相似。】】
+     * 模板方法（Template Method）模式： 【自己经常写的就是模板方法。】
+     * 观察者（Observer）模式： 事件、回调、监听器。
      * 迭代子（Iterator）模式：
-     * 责任链（Chain of Responsibility）模式：
+     * 责任链（Chain of Responsibility）模式：过滤器。
      * 命令（Command）模式：
      * 备忘录（Memento）模式：
      * 状态（State）模式：

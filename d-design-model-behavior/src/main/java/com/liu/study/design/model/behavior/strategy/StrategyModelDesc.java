@@ -2,7 +2,7 @@ package com.liu.study.design.model.behavior.strategy;
 
 /**
  *
- *
+ * TODO:java中车策略模式，java.util.Comparator.
  *
  * @author lwa
  * @version 1.0.0
